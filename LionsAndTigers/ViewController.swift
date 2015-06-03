@@ -68,11 +68,27 @@ class ViewController: UIViewController {
     @IBAction func nextBarButtonItemPress(sender: UIBarButtonItem) {
         let randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
         let tigerToBeShown = myTigers[randomIndex]
-        
+
+        /*
         myImageView.image = tigerToBeShown.image
         nameLabel.text = tigerToBeShown.name
         ageLabel.text = "\(tigerToBeShown.age)"
         breedLabel.text = tigerToBeShown.breed
+        */
+        
+        UIView.transitionWithView(
+            self.view,
+            duration: 2,
+            options: UIViewAnimationOptions.TransitionCrossDissolve,
+            animations: {
+                self.myImageView.image = tigerToBeShown.image
+                self.nameLabel.text = tigerToBeShown.name
+                self.ageLabel.text = "\(tigerToBeShown.age)"
+                self.breedLabel.text = tigerToBeShown.breed
+            },
+            completion: {
+                (finished: Bool) -> () in
+        })
     }
 }
 
