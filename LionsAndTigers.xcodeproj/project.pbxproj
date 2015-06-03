@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1258534A1B1EF0BB00FC69A3 /* hobbes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 125853491B1EF0BB00FC69A3 /* hobbes.gif */; };
+		1258534C1B1EF17300FC69A3 /* Rajah.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1258534B1B1EF17300FC69A3 /* Rajah.jpg */; };
+		1258534E1B1EF2A900FC69A3 /* tigger4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1258534D1B1EF2A900FC69A3 /* tigger4.gif */; };
 		12F23F6F1B1EE795007680A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F23F6E1B1EE795007680A5 /* AppDelegate.swift */; };
 		12F23F711B1EE795007680A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F23F701B1EE795007680A5 /* ViewController.swift */; };
 		12F23F741B1EE795007680A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F23F721B1EE795007680A5 /* Main.storyboard */; };
 		12F23F761B1EE795007680A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F23F751B1EE795007680A5 /* Images.xcassets */; };
 		12F23F791B1EE795007680A5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12F23F771B1EE795007680A5 /* LaunchScreen.xib */; };
 		12F23F851B1EE795007680A5 /* LionsAndTigersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F23F841B1EE795007680A5 /* LionsAndTigersTests.swift */; };
+		12F23F8F1B1EEA36007680A5 /* Tiger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F23F8E1B1EEA36007680A5 /* Tiger.swift */; };
+		12F23F911B1EEC22007680A5 /* tony9n.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 12F23F901B1EEC22007680A5 /* tony9n.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		125853491B1EF0BB00FC69A3 /* hobbes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hobbes.gif; sourceTree = "<group>"; };
+		1258534B1B1EF17300FC69A3 /* Rajah.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Rajah.jpg; sourceTree = "<group>"; };
+		1258534D1B1EF2A900FC69A3 /* tigger4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tigger4.gif; sourceTree = "<group>"; };
 		12F23F691B1EE795007680A5 /* LionsAndTigers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LionsAndTigers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F23F6D1B1EE795007680A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12F23F6E1B1EE795007680A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +44,8 @@
 		12F23F7E1B1EE795007680A5 /* LionsAndTigersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LionsAndTigersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F23F831B1EE795007680A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12F23F841B1EE795007680A5 /* LionsAndTigersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LionsAndTigersTests.swift; sourceTree = "<group>"; };
+		12F23F8E1B1EEA36007680A5 /* Tiger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tiger.swift; sourceTree = "<group>"; };
+		12F23F901B1EEC22007680A5 /* tony9n.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tony9n.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,7 @@
 			children = (
 				12F23F6E1B1EE795007680A5 /* AppDelegate.swift */,
 				12F23F701B1EE795007680A5 /* ViewController.swift */,
+				12F23F8E1B1EEA36007680A5 /* Tiger.swift */,
 				12F23F721B1EE795007680A5 /* Main.storyboard */,
 				12F23F751B1EE795007680A5 /* Images.xcassets */,
 				12F23F771B1EE795007680A5 /* LaunchScreen.xib */,
@@ -90,6 +101,10 @@
 		12F23F6C1B1EE795007680A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1258534D1B1EF2A900FC69A3 /* tigger4.gif */,
+				1258534B1B1EF17300FC69A3 /* Rajah.jpg */,
+				125853491B1EF0BB00FC69A3 /* hobbes.gif */,
+				12F23F901B1EEC22007680A5 /* tony9n.jpg */,
 				12F23F6D1B1EE795007680A5 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -194,7 +209,11 @@
 			files = (
 				12F23F741B1EE795007680A5 /* Main.storyboard in Resources */,
 				12F23F791B1EE795007680A5 /* LaunchScreen.xib in Resources */,
+				1258534C1B1EF17300FC69A3 /* Rajah.jpg in Resources */,
 				12F23F761B1EE795007680A5 /* Images.xcassets in Resources */,
+				1258534E1B1EF2A900FC69A3 /* tigger4.gif in Resources */,
+				12F23F911B1EEC22007680A5 /* tony9n.jpg in Resources */,
+				1258534A1B1EF0BB00FC69A3 /* hobbes.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12F23F711B1EE795007680A5 /* ViewController.swift in Sources */,
+				12F23F8F1B1EEA36007680A5 /* Tiger.swift in Sources */,
 				12F23F6F1B1EE795007680A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +431,7 @@
 				12F23F8A1B1EE795007680A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12F23F8B1B1EE795007680A5 /* Build configuration list for PBXNativeTarget "LionsAndTigersTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +440,7 @@
 				12F23F8D1B1EE795007680A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
