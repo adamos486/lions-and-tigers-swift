@@ -16,7 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var breedLabel: UILabel!
     
     var myTigers: [Tiger] = []
-
+    var currentIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -59,23 +60,25 @@ class ViewController: UIViewController {
         
         myTigers += [hobbes, rajahTiger, tigger];
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func nextBarButtonItemPress(sender: UIBarButtonItem) {
-        let randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
-        let tigerToBeShown = myTigers[randomIndex]
-
-        /*
-        myImageView.image = tigerToBeShown.image
-        nameLabel.text = tigerToBeShown.name
-        ageLabel.text = "\(tigerToBeShown.age)"
-        breedLabel.text = tigerToBeShown.breed
-        */
         
+        
+        
+        var randomIndex: Int
+        do {
+            randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
+            
+        } while currentIndex == randomIndex
+        
+        
+        currentIndex = randomIndex
+        let tigerToBeShown = myTigers[randomIndex]
         UIView.transitionWithView(
             self.view,
             duration: 2,
@@ -89,6 +92,13 @@ class ViewController: UIViewController {
             completion: {
                 (finished: Bool) -> () in
         })
+        /*
+        myImageView.image = tigerToBeShown.image
+        nameLabel.text = tigerToBeShown.name
+        ageLabel.text = "\(tigerToBeShown.age)"
+        breedLabel.text = tigerToBeShown.breed
+        */
+        
     }
 }
 
