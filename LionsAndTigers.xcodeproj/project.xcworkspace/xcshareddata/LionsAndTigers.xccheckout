@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C05625D1-F503-41D8-A090-A0D0896E2BCB</string>
 	<key>IDESourceControlProjectName</key>
-	<string>LionsAndTigers</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>56679543956B61EA526FB893D8CFA3FD98A83090</key>
 		<string>https://github.com/adamos486/lions-and-tigers-swift.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>LionsAndTigers.xcodeproj</string>
+	<string>LionsAndTigers.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>56679543956B61EA526FB893D8CFA3FD98A83090</key>

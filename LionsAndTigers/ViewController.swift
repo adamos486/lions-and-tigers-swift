@@ -27,12 +27,15 @@ class ViewController: UIViewController {
         tonyTheTiger.breed = "Cartoon"
         tonyTheTiger.image = UIImage(named: "tony9n.jpg")
         
-        myImageView.image = tonyTheTiger.image
-        nameLabel.text = tonyTheTiger.name
-        ageLabel.text = "\(tonyTheTiger.age)"
-        breedLabel.text = tonyTheTiger.breed
+        tonyTheTiger.chuffNumberOfTimes(5, isLoud: true)
         
-        myTigers.append(tonyTheTiger);
+        
+        self.myImageView.image = tonyTheTiger.image
+        self.nameLabel.text = tonyTheTiger.name
+        self.ageLabel.text = "\(tonyTheTiger.age)"
+        self.breedLabel.text = tonyTheTiger.breed
+        
+        self.myTigers.append(tonyTheTiger);
         
         println("My tiger is \(tonyTheTiger.name)")
         println("He's " + "\(tonyTheTiger.age)" + " years old")
@@ -58,7 +61,7 @@ class ViewController: UIViewController {
         tigger.age = 87
         tigger.image = UIImage(named: "tigger4.gif")
         
-        myTigers += [hobbes, rajahTiger, tigger];
+        self.myTigers += [hobbes, rajahTiger, tigger];
     }
     
     override func didReceiveMemoryWarning() {
@@ -74,11 +77,11 @@ class ViewController: UIViewController {
         do {
             randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
             
-        } while currentIndex == randomIndex
+        } while self.currentIndex == randomIndex
         
         
-        currentIndex = randomIndex
-        let tigerToBeShown = myTigers[randomIndex]
+        self.currentIndex = randomIndex
+        let tigerToBeShown = self.myTigers[randomIndex]
         UIView.transitionWithView(
             self.view,
             duration: 2,
@@ -98,7 +101,6 @@ class ViewController: UIViewController {
         ageLabel.text = "\(tigerToBeShown.age)"
         breedLabel.text = tigerToBeShown.breed
         */
-        
     }
 }
 
