@@ -66,6 +66,15 @@
                                     <rect key="frame" x="16" y="474" width="343" height="21"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fact" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccf-af-mHC">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="574" width="343" height="47"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -75,6 +84,7 @@
                                 <exclude reference="itK-e3-dSz"/>
                                 <exclude reference="UZn-tS-4kM"/>
                                 <exclude reference="AFD-ZO-QTk"/>
+                                <exclude reference="ccf-af-mHC"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -84,12 +94,14 @@
                                 <include reference="itK-e3-dSz"/>
                                 <include reference="UZn-tS-4kM"/>
                                 <include reference="AFD-ZO-QTk"/>
+                                <include reference="ccf-af-mHC"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="ageLabel" destination="itK-e3-dSz" id="kdb-Nb-5Fy"/>
                         <outlet property="breedLabel" destination="UZn-tS-4kM" id="dgW-4F-US4"/>
+                        <outlet property="factLabel" destination="ccf-af-mHC" id="xLp-lO-PJT"/>
                         <outlet property="myImageView" destination="PDy-dn-UVz" id="CsW-L6-CqV"/>
                         <outlet property="nameLabel" destination="AFD-ZO-QTk" id="osy-d3-3f9"/>
                     </connections>
