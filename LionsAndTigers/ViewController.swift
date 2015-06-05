@@ -23,12 +23,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         var tonyTheTiger = Tiger()
         tonyTheTiger.name = "Tony"
-        tonyTheTiger.age = 64
+        tonyTheTiger.age = tonyTheTiger.ageInTigerYearsFromAge(64)//64
         tonyTheTiger.breed = "Cartoon"
         tonyTheTiger.image = UIImage(named: "tony9n.jpg")
         
         tonyTheTiger.chuffNumberOfTimes(5, isLoud: true)
-        
+        println(tonyTheTiger.ageInTigerYearsFromAge(tonyTheTiger.age))
         
         self.myImageView.image = tonyTheTiger.image
         self.nameLabel.text = tonyTheTiger.name
@@ -45,20 +45,20 @@ class ViewController: UIViewController {
         
         var hobbes = Tiger()
         hobbes.name = "Hobbes"
-        hobbes.age = 30
+        hobbes.age = hobbes.ageInTigerYearsFromAge(30)//30
         hobbes.breed = "Cartoon"
         hobbes.image = UIImage(named: "hobbes.gif")
         
         var rajahTiger = Tiger()
         rajahTiger.name = "Rajah"
-        rajahTiger.age = 23
+        rajahTiger.age = rajahTiger.ageInTigerYearsFromAge(23)//23
         rajahTiger.breed = "Cartoon"
         rajahTiger.image = UIImage(named: "Rajah.jpg")
         
         var tigger = Tiger()
         tigger.name = "Tigger"
         tigger.breed = "Cartoon"
-        tigger.age = 87
+        tigger.age = tigger.ageInTigerYearsFromAge(87)//87
         tigger.image = UIImage(named: "tigger4.gif")
         
         self.myTigers += [hobbes, rajahTiger, tigger];
