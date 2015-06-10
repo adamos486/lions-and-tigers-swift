@@ -83,6 +83,7 @@ class ViewController: UIViewController {
         lioness.name = "Sarabi"
         lioness.subspecies = "Barbary"
         lioness.roar()
+        lioness.rubLionCubsBelly()
         
         var lion2 = Lion()
         lion2.age = 8
