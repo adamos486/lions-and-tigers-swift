@@ -17,9 +17,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var factLabel: UILabel!
     
     var myTigers: [Tiger] = []
+    var myLions: [Lion] = []
+    
     var currentIndex = 0
     
-    var myLions: [Lion] = []
+    var currentAnimal = (species: "Tiger", index: 0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +47,6 @@ class ViewController: UIViewController {
         println("He's " + "\(tonyTheTiger.age)" + " years old")
         println("He's a " + "\(tonyTheTiger.breed)")
         println("Here's his image: " + "\(tonyTheTiger.image)")
-        
         
         var hobbes = Tiger()
         hobbes.name = "Hobbes"
@@ -90,9 +91,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func nextBarButtonItemPress(sender: UIBarButtonItem) {
-        
-        
-        
         var randomIndex: Int
         do {
             randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
@@ -122,6 +120,17 @@ class ViewController: UIViewController {
         ageLabel.text = "\(tigerToBeShown.age)"
         breedLabel.text = tigerToBeShown.breed
         */
+    }
+    
+    func updateAnimal() {
+        switch currentAnimal {
+        case ("Tiger", _):
+            let randomIndex = Int(arc4random_uniform(UInt32(myLions.count)))
+            currentAnimal = ("Lion", randomIndex)
+        default:
+            let randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
+            currentAnimal = ("Tiger", randomIndex)
+        }
     }
 }
 
