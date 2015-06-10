@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     var myTigers: [Tiger] = []
     var currentIndex = 0
     
+    var myLions: [Lion] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -64,6 +66,22 @@ class ViewController: UIViewController {
         tigger.image = UIImage(named: "tigger4.gif")
         
         self.myTigers += [hobbes, rajahTiger, tigger];
+        
+        var lion = Lion()
+        lion.age = 4
+        lion.isAlphaMale = false
+        lion.image = UIImage(named: "lion-01.jpg")
+        lion.name = "Mufasa"
+        lion.subspecies = "West African"
+        
+        var lioness = Lion()
+        lioness.age = 3
+        lioness.isAlphaMale = false
+        lioness.image = UIImage(named: "lion4.jpg")
+        lioness.name = "Sarabi"
+        lioness.subspecies = "Barbary"
+        
+        self.myLions += [lion, lioness]
     }
     
     override func didReceiveMemoryWarning() {
