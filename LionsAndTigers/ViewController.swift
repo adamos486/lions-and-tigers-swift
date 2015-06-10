@@ -76,8 +76,8 @@ class ViewController: UIViewController {
         lion.subspecies = "West African"
         lion.roar()
         
-        var lioness = Lion()
-        lioness.age = 3
+        var lioness = LionCub()
+        lioness.age = 1
         lioness.isAlphaMale = false
         lioness.image = UIImage(named: "lion4.jpg")
         lioness.name = "Sarabi"
@@ -93,7 +93,7 @@ class ViewController: UIViewController {
         lion2.roar()
         
         var lion3 = Lion()
-        lion3.age = 1
+        lion3.age = 5
         lion3.isAlphaMale = false
         lion3.image = UIImage(named: "lion3.jpg")
         lion3.name = "Randall"
