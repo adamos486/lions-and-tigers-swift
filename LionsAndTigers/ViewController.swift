@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     var myTigers: [Tiger] = []
     var myLions: [Lion] = []
+    var myLionCubs: [LionCub] = []
     
     var currentIndex = 0
     
@@ -85,6 +86,8 @@ class ViewController: UIViewController {
         lioness.roar()
         lioness.rubLionCubsBelly()
         
+        self.myLionCubs += [lioness]
+        
         var lion2 = Lion()
         lion2.age = 8
         lion2.isAlphaMale = true
@@ -103,7 +106,25 @@ class ViewController: UIViewController {
         lion3.changeToAlphaMale()
         println("isAlphaMale: \(lion3.isAlphaMale)")
         
-        self.myLions += [lion, lioness, lion2, lion3]
+        self.myLions += [lion, lion2, lion3]
+        
+        var lioncub = LionCub()
+        lioncub.age = 1
+        lioncub.name = "Nala"
+        lioncub.image = UIImage(named: "lioncub1.jpg")
+        lioncub.isAlphaMale = false
+        lioncub.subspecies = "Transval"
+        
+        self.myLionCubs += [lioncub]
+        
+        var lioncub2 = LionCub()
+        lioncub2.age = 1
+        lioncub2.name = "Jesse"
+        lioncub2.image = UIImage(named: "lioncub2.jpg")
+        lioncub2.isAlphaMale = true
+        lioncub2.subspecies = "Transval"
+        
+        self.myLionCubs += [lioncub2]
     }
     
     override func didReceiveMemoryWarning() {
