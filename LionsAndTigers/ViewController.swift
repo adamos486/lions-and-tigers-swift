@@ -82,7 +82,21 @@ class ViewController: UIViewController {
         lioness.name = "Sarabi"
         lioness.subspecies = "Barbary"
         
-        self.myLions += [lion, lioness]
+        var lion2 = Lion()
+        lion2.age = 8
+        lion2.isAlphaMale = true
+        lion2.image = UIImage(named: "lion2.jpg")
+        lion2.name = "James Franco"
+        lion2.subspecies = "Actor"
+        
+        var lion3 = Lion()
+        lion3.age = 1
+        lion3.isAlphaMale = false
+        lion3.image = UIImage(named: "lion3.jpg")
+        lion3.name = "Randall"
+        lion3.subspecies = "Saharan"
+        
+        self.myLions += [lion, lioness, lion2, lion3]
     }
     
     override func didReceiveMemoryWarning() {
