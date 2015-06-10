@@ -74,6 +74,7 @@ class ViewController: UIViewController {
         lion.image = UIImage(named: "lion-01.jpg")
         lion.name = "Mufasa"
         lion.subspecies = "West African"
+        lion.roar()
         
         var lioness = Lion()
         lioness.age = 3
@@ -81,6 +82,7 @@ class ViewController: UIViewController {
         lioness.image = UIImage(named: "lion4.jpg")
         lioness.name = "Sarabi"
         lioness.subspecies = "Barbary"
+        lioness.roar()
         
         var lion2 = Lion()
         lion2.age = 8
@@ -88,6 +90,7 @@ class ViewController: UIViewController {
         lion2.image = UIImage(named: "lion2.jpg")
         lion2.name = "James Franco"
         lion2.subspecies = "Actor"
+        lion2.roar()
         
         var lion3 = Lion()
         lion3.age = 1
@@ -95,6 +98,7 @@ class ViewController: UIViewController {
         lion3.image = UIImage(named: "lion3.jpg")
         lion3.name = "Randall"
         lion3.subspecies = "Saharan"
+        lion3.roar()
         
         self.myLions += [lion, lioness, lion2, lion3]
     }
