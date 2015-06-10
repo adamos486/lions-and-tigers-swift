@@ -99,6 +99,8 @@ class ViewController: UIViewController {
         lion3.name = "Randall"
         lion3.subspecies = "Saharan"
         lion3.roar()
+        lion3.changeToAlphaMale()
+        println("isAlphaMale: \(lion3.isAlphaMale)")
         
         self.myLions += [lion, lioness, lion2, lion3]
     }
